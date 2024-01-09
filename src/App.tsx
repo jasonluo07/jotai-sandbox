@@ -1,9 +1,21 @@
+const Input = () => {
+  return <input defaultValue={'hello'} onChange={e => console.log(e.target.value)} />;
+};
+
+const CharCount = () => {
+  return <div>Length: 5</div>;
+};
+
+const UpperCase = () => {
+  return <div>Upper Case: HELLO</div>;
+};
+
 const App = () => {
   return (
     <>
-      <input defaultValue={'hello'} onChange={e => console.log(e.target.value)} />
-      <div>Length: 5</div>
-      <div>Upper Case: HELLO</div>
+      <Input />
+      <CharCount />
+      <UpperCase />
     </>
   );
 };
